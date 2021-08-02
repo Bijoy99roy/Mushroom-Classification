@@ -60,16 +60,23 @@ def predict():
         pred_val.validation()
 
         pred = Prediction()
-        pred.predict()
+        prediction, columns = pred.predict()
         logger.log(file_object, 'Prediction for data complete', 'Info')
         file_object.close()
-        return send_file(os.path.join('Prediction_Files/')+'Prediction.csv', as_attachment=True)
+        return render_template('result.html', result = [enumerate(prediction), columns])
+        #return send_file(os.path.join('Prediction_Files/')+'Prediction.csv', as_attachment=True)
     except Exception as e:
         logger.log(file_object, f'Error occured in prediction. Message: {str(e)}', 'Error')
         file_object.close()
         message = 'Error :: '+str(e)
         return render_template('exception.html', exception = message)
 
-
+@app.route('/download',methods=['GET'])
+def download():
+    try:
+        return send_file(os.path.join('Prediction_Files/')+'Prediction.csv', as_attachment=True)
+    except Exception as e:
+        message = 'Error :: ' + str(e)
+        return render_template('exception.html', exception=message)
 if __name__ == "__main__":
     app.run(debug=True)

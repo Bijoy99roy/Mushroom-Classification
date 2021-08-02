@@ -218,3 +218,210 @@
 2021-08-02/16:42:41: None :		Entered the loadModel method of FileHandler class
 2021-08-02/16:42:41: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
 2021-08-02/16:42:41: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:18:38: None :		Validation started for Prediction Data
+2021-08-02/17:18:38: None :		Starting columns length validation
+2021-08-02/17:18:38: None :		Columns length validation complete!!
+2021-08-02/17:21:19: None :		Validation started for Prediction Data
+2021-08-02/17:21:19: None :		Starting columns length validation
+2021-08-02/17:21:19: None :		Columns length validation complete!!
+2021-08-02/17:23:42: None :		Validation started for Prediction Data
+2021-08-02/17:23:42: None :		Starting columns length validation
+2021-08-02/17:23:43: None :		Columns length validation complete!!
+2021-08-02/17:23:43: None :		Start of Prediction
+2021-08-02/17:23:43: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:23:43: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:23:43: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:23:43: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		Started imputing data.
+2021-08-02/17:23:43: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:23:43: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:23:43: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:23:43: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:23:43: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:30:37: None :		Validation started for Prediction Data
+2021-08-02/17:30:37: None :		Starting columns length validation
+2021-08-02/17:30:37: None :		Columns length validation complete!!
+2021-08-02/17:30:37: None :		Start of Prediction
+2021-08-02/17:30:38: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:30:38: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:30:38: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:30:38: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		Started imputing data.
+2021-08-02/17:30:38: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:30:38: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:30:38: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:30:38: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:30:38: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:30:38: None :		Error occured while running the prediction!! Message: 'tuple' object has no attribute 'append'
+2021-08-02/17:32:17: None :		Validation started for Prediction Data
+2021-08-02/17:32:17: None :		Starting columns length validation
+2021-08-02/17:32:17: None :		Columns length validation complete!!
+2021-08-02/17:32:17: None :		Start of Prediction
+2021-08-02/17:32:17: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:32:17: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:32:17: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:32:17: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		Started imputing data.
+2021-08-02/17:32:17: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:32:17: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:32:17: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:32:17: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:32:17: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:33:54: None :		Validation started for Prediction Data
+2021-08-02/17:33:54: None :		Starting columns length validation
+2021-08-02/17:33:55: None :		Columns length validation complete!!
+2021-08-02/17:33:55: None :		Start of Prediction
+2021-08-02/17:33:55: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:33:55: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:33:55: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:33:55: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		Started imputing data.
+2021-08-02/17:33:55: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:33:55: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:33:55: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:33:55: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:33:55: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:37:20: None :		Validation started for Prediction Data
+2021-08-02/17:37:20: None :		Starting columns length validation
+2021-08-02/17:37:21: None :		Columns length validation complete!!
+2021-08-02/17:37:21: None :		Start of Prediction
+2021-08-02/17:37:21: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:37:21: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:37:21: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:37:21: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		Started imputing data.
+2021-08-02/17:37:21: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:37:21: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:37:21: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:37:21: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:37:21: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:42:34: None :		Validation started for Prediction Data
+2021-08-02/17:42:34: None :		Starting columns length validation
+2021-08-02/17:42:34: None :		Columns length validation complete!!
+2021-08-02/17:42:34: None :		Start of Prediction
+2021-08-02/17:42:34: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:42:34: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:42:34: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:42:34: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:42:34: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:42:34: None :		Started imputing data.
+2021-08-02/17:42:35: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:42:35: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:42:35: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:42:35: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:42:35: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:42:35: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:42:35: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:42:35: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:43:40: None :		Validation started for Prediction Data
+2021-08-02/17:43:40: None :		Starting columns length validation
+2021-08-02/17:43:40: None :		Columns length validation complete!!
+2021-08-02/17:43:40: None :		Start of Prediction
+2021-08-02/17:43:40: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:43:40: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:43:40: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:43:40: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		Started imputing data.
+2021-08-02/17:43:40: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:43:40: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:43:40: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:43:40: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:43:40: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:52:45: None :		Validation started for Prediction Data
+2021-08-02/17:52:45: None :		Starting columns length validation
+2021-08-02/17:52:45: None :		Columns length validation complete!!
+2021-08-02/17:52:46: None :		Start of Prediction
+2021-08-02/17:52:46: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:52:46: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:52:46: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:52:46: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		Started imputing data.
+2021-08-02/17:52:46: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:52:46: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:52:46: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:52:46: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:52:46: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:55:47: None :		Validation started for Prediction Data
+2021-08-02/17:55:47: None :		Starting columns length validation
+2021-08-02/17:55:47: None :		Columns length validation complete!!
+2021-08-02/17:55:47: None :		Start of Prediction
+2021-08-02/17:55:47: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:55:47: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:55:47: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:55:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		Started imputing data.
+2021-08-02/17:55:47: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:55:47: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:55:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:55:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:55:47: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/17:56:35: None :		Validation started for Prediction Data
+2021-08-02/17:56:35: None :		Starting columns length validation
+2021-08-02/17:56:35: None :		Columns length validation complete!!
+2021-08-02/17:56:35: None :		Start of Prediction
+2021-08-02/17:56:36: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/17:56:36: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/17:56:36: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/17:56:36: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		Started imputing data.
+2021-08-02/17:56:36: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/17:56:36: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/17:56:36: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/17:56:36: None :		Entered the loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/17:56:36: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/18:02:47: None :		Validation started for Prediction Data
+2021-08-02/18:02:47: None :		Starting columns length validation
+2021-08-02/18:02:47: None :		Columns length validation complete!!
+2021-08-02/18:02:47: None :		Start of Prediction
+2021-08-02/18:02:47: None :		Entered the isNullPresent method of PreProcessor class
+2021-08-02/18:02:47: None :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-02/18:02:47: None :		Entered imputeMissingValues method of PreProcessing class
+2021-08-02/18:02:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/18:02:47: None :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-02/18:02:47: None :		Started imputing data.
+2021-08-02/18:02:47: None :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-02/18:02:47: None :		Entered the encodeData method of PreProcessor class
+2021-08-02/18:02:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/18:02:47: None :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-02/18:02:47: None :		Encoding complete!!. Exiting encoding method...
+2021-08-02/18:02:47: None :		Entered the loadModel method of FileHandler class
+2021-08-02/18:02:47: None :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-02/18:02:48: None :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-02/18:04:46: None :		Validation started for Prediction Data
+2021-08-02/18:04:46: None :		Starting columns length validation

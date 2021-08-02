@@ -12,4 +12,5 @@ button.style.display = 'none'
 console.log('done')
 var text = document.getElementById("loadtext");
 text.innerText = 'Please Wait...'
+
 }

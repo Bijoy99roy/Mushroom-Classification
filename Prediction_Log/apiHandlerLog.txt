@@ -106,3 +106,91 @@
 2021-08-02/16:42:39: Info :		File upload complete..
 2021-08-02/16:42:40: Info :		Prediction Initiated..
 2021-08-02/16:42:41: Info :		Prediction for data complete
+2021-08-02/17:18:27: Info :		Initiating app
+2021-08-02/17:18:27: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:18:36: Info :		File upload initaited..
+2021-08-02/17:18:37: Info :		File upload complete..
+2021-08-02/17:18:38: Info :		Prediction Initiated..
+2021-08-02/17:18:40: Info :		Prediction for data complete
+2021-08-02/17:21:14: Info :		Initiating app
+2021-08-02/17:21:14: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:21:18: Info :		File upload initaited..
+2021-08-02/17:21:18: Info :		File upload complete..
+2021-08-02/17:21:19: Info :		Prediction Initiated..
+2021-08-02/17:21:20: Info :		Prediction for data complete
+2021-08-02/17:23:37: Info :		Initiating app
+2021-08-02/17:23:37: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:23:42: Info :		File upload initaited..
+2021-08-02/17:23:42: Info :		File upload complete..
+2021-08-02/17:23:42: Info :		Prediction Initiated..
+2021-08-02/17:23:43: Info :		Prediction for data complete
+2021-08-02/17:30:31: Info :		Initiating app
+2021-08-02/17:30:31: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:30:36: Info :		File upload initaited..
+2021-08-02/17:30:36: Info :		File upload complete..
+2021-08-02/17:30:37: Info :		Prediction Initiated..
+2021-08-02/17:30:38: Error :		Error occured in prediction. Message: 'tuple' object has no attribute 'append'
+2021-08-02/17:32:12: Info :		Initiating app
+2021-08-02/17:32:12: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:32:16: Info :		File upload initaited..
+2021-08-02/17:32:16: Info :		File upload complete..
+2021-08-02/17:32:17: Info :		Prediction Initiated..
+2021-08-02/17:32:17: Info :		Prediction for data complete
+2021-08-02/17:33:49: Info :		Initiating app
+2021-08-02/17:33:49: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:33:54: Info :		File upload initaited..
+2021-08-02/17:33:54: Info :		File upload complete..
+2021-08-02/17:33:54: Info :		Prediction Initiated..
+2021-08-02/17:33:55: Info :		Prediction for data complete
+2021-08-02/17:37:13: Info :		Initiating app
+2021-08-02/17:37:13: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:37:19: Info :		File upload initaited..
+2021-08-02/17:37:19: Info :		File upload complete..
+2021-08-02/17:37:20: Info :		Prediction Initiated..
+2021-08-02/17:37:21: Info :		Prediction for data complete
+2021-08-02/17:42:27: Info :		Initiating app
+2021-08-02/17:42:27: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:42:33: Info :		File upload initaited..
+2021-08-02/17:42:33: Info :		File upload complete..
+2021-08-02/17:42:34: Info :		Prediction Initiated..
+2021-08-02/17:42:35: Info :		Prediction for data complete
+2021-08-02/17:43:34: Info :		Initiating app
+2021-08-02/17:43:34: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:43:39: Info :		File upload initaited..
+2021-08-02/17:43:39: Info :		File upload complete..
+2021-08-02/17:43:40: Info :		Prediction Initiated..
+2021-08-02/17:43:40: Info :		Prediction for data complete
+2021-08-02/17:52:14: Info :		Initiating app
+2021-08-02/17:52:14: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:52:21: Info :		File upload initaited..
+2021-08-02/17:52:21: Info :		File upload complete..
+2021-08-02/17:52:44: Info :		File upload initaited..
+2021-08-02/17:52:44: Info :		File upload complete..
+2021-08-02/17:52:45: Info :		Prediction Initiated..
+2021-08-02/17:52:46: Info :		Prediction for data complete
+2021-08-02/17:53:22: Info :		Initiating app
+2021-08-02/17:53:23: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:53:52: Info :		Initiating app
+2021-08-02/17:53:52: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:54:48: Info :		Initiating app
+2021-08-02/17:54:48: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:55:39: Info :		Initiating app
+2021-08-02/17:55:39: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:55:46: Info :		File upload initaited..
+2021-08-02/17:55:46: Info :		File upload complete..
+2021-08-02/17:55:47: Info :		Prediction Initiated..
+2021-08-02/17:55:47: Info :		Prediction for data complete
+2021-08-02/17:56:29: Info :		Initiating app
+2021-08-02/17:56:29: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/17:56:34: Info :		File upload initaited..
+2021-08-02/17:56:34: Info :		File upload complete..
+2021-08-02/17:56:35: Info :		Prediction Initiated..
+2021-08-02/17:56:36: Info :		Prediction for data complete
+2021-08-02/18:02:41: Info :		Initiating app
+2021-08-02/18:02:41: Info :		Deletion and creation of Prediction_Files complete. Exiting method...
+2021-08-02/18:02:46: Info :		File upload initaited..
+2021-08-02/18:02:46: Info :		File upload complete..
+2021-08-02/18:02:47: Info :		Prediction Initiated..
+2021-08-02/18:02:48: Info :		Prediction for data complete
+2021-08-02/18:04:46: Info :		Prediction Initiated..
+2021-08-02/18:04:46: Error :		Error occured in prediction. Message: Invalid column length for the file!!. Column should be 22, 24 found

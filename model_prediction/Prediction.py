@@ -47,10 +47,11 @@ class Prediction:
 
             #predicting
             predicted = logisticReg.predict(self.data)
-            dataframe['predicted'] = ['e' if i == 0 else 'p' for i in predicted]
+            dataframe['predicted'] = ['Edible' if i == 0 else 'Poisonous' for i in predicted]
             dataframe.to_csv('Prediction_Files/Prediction.csv')
             self.logger.log(self.file_object, 'Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class ')
-
+            columninfo[2].append('prediction')
+            return dataframe.to_numpy(), columninfo[2]
 
         except Exception as e:
             self.logger.log(self.file_object, 'Error occured while running the prediction!! Message: '+ str(e))

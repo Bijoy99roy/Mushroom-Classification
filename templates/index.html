@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<div class="container">
     {% if not is_uploaded %}
         <form action="/uploader" method="POST" enctype="multipart/form-data">
 <!--            <input type="file" name="file">-->
@@ -17,6 +17,9 @@
     {% endif %}
             {% if is_uploaded %}
                 <a href="/predict"><button class="btn btn-primary" onclick="Loading()" id="predict">Predict</button></a>
+
             {% endif %}
             <h3 class="text-danger" id="loadtext"></h3>
+
+</div>
 {% endblock content %}

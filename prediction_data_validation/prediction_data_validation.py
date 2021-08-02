@@ -54,7 +54,7 @@ class PredictionDataValidation:
                 f.close()
             columnNames = dic["columnNames"]
             columnNumber = dic["columnNumber"]
-            requiredColumns = dic["columnNames"].keys()
+            requiredColumns = list(dic["columnNames"].keys())
 
             file = open("Prediction_Log/valuesFromSchemaLog.txt",'a+')
             message = "ColumnNumber: "+str(columnNumber)+"\t"+"RequiredColumns: "+str(requiredColumns)+"\n"

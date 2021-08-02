@@ -36,3 +36,32 @@
 2021-08-02/16:42:00: None :		Columns length validation complete!!
 2021-08-02/16:42:40: None :		Column Length Validation Started!!
 2021-08-02/16:42:40: None :		Columns length validation complete!!
+2021-08-02/17:18:38: None :		Column Length Validation Started!!
+2021-08-02/17:18:38: None :		Columns length validation complete!!
+2021-08-02/17:21:19: None :		Column Length Validation Started!!
+2021-08-02/17:21:19: None :		Columns length validation complete!!
+2021-08-02/17:23:42: None :		Column Length Validation Started!!
+2021-08-02/17:23:42: None :		Columns length validation complete!!
+2021-08-02/17:30:37: None :		Column Length Validation Started!!
+2021-08-02/17:30:37: None :		Columns length validation complete!!
+2021-08-02/17:32:17: None :		Column Length Validation Started!!
+2021-08-02/17:32:17: None :		Columns length validation complete!!
+2021-08-02/17:33:54: None :		Column Length Validation Started!!
+2021-08-02/17:33:55: None :		Columns length validation complete!!
+2021-08-02/17:37:20: None :		Column Length Validation Started!!
+2021-08-02/17:37:21: None :		Columns length validation complete!!
+2021-08-02/17:42:34: None :		Column Length Validation Started!!
+2021-08-02/17:42:34: None :		Columns length validation complete!!
+2021-08-02/17:43:40: None :		Column Length Validation Started!!
+2021-08-02/17:43:40: None :		Columns length validation complete!!
+2021-08-02/17:52:45: None :		Column Length Validation Started!!
+2021-08-02/17:52:45: None :		Columns length validation complete!!
+2021-08-02/17:55:47: None :		Column Length Validation Started!!
+2021-08-02/17:55:47: None :		Columns length validation complete!!
+2021-08-02/17:56:35: None :		Column Length Validation Started!!
+2021-08-02/17:56:35: None :		Columns length validation complete!!
+2021-08-02/18:02:47: None :		Column Length Validation Started!!
+2021-08-02/18:02:47: None :		Columns length validation complete!!
+2021-08-02/18:04:46: None :		Column Length Validation Started!!
+2021-08-02/18:04:46: None :		Invalid column length for the file!! Exiting...
+2021-08-02/18:04:46: None :		Invalid column length for the file!!. Column should be 22, 24 found
