@@ -169,8 +169,8 @@
       "paths": "p",
       "urbans": "u",
       "waste": "w",
-      "woords": "d"
+      "woods": "d"
     }
   },
-  "requiredColumns": ["INDUS", "NOX","RM","AGE","DIS","PTRATIO","LSTAT"]
+
 }

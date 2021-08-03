@@ -12,16 +12,16 @@ class PredictionValidation:
             f = open("Prediction_Log/Prediction_Log.txt", "a+")
 
             self.logger.log(f,"Validation started for Prediction Data")
+            #Getting all the necessary information from Schema file
             columnNumber, columnNames, requiredColumns = self.raw_data.getSchemaValues()
             #validating columns length
             self.logger.log(f, "Starting columns length validation")
             self.raw_data.validateColumnLength(columnNumber)
             self.logger.log(f, "Columns length validation complete!!")
-
-
+            f.close()
 
         except Exception as e:
             f.close()
             raise e
-        f.close()
+
 

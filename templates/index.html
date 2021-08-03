@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    {% if not is_uploaded %}
+    {% if not data['is_uploaded'] %}
         <form action="/uploader" method="POST" enctype="multipart/form-data">
 <!--            <input type="file" name="file">-->
 <!--            <input type="submit" value="Upload">-->
@@ -15,11 +15,30 @@
                 <input class="btn btn-primary mt-2" type="submit" value="Upload">
         </form>
     {% endif %}
-            {% if is_uploaded %}
+            {% if data['is_uploaded'] %}
                 <a href="/predict"><button class="btn btn-primary" onclick="Loading()" id="predict">Predict</button></a>
 
             {% endif %}
             <h3 class="text-danger" id="loadtext"></h3>
+    {% if not data['is_uploaded'] %}
+        <hr>OR<hr>
 
+        <form class="row" action="/input" method="POST">
+            {% for label in data['labels'].keys() %}
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="inputState">{{label}}</label>
+                  <select name="{{label}}" id="inputState" class="form-control">
+                      {%for option in data['labels'][label].keys() %}
+                        <option selected>{{option}}</option>
+                      {% endfor %}
+                  </select>
+                </div>
+              </div>
+            {% endfor %}
+            <input class="btn btn-primary" type="submit" value="Submit" style="height: 50px;margin-top: 22px;">
+        </form>
+
+    {%endif%}
 </div>
 {% endblock content %}

@@ -19,7 +19,7 @@ class Prediction:
         :return:
         """
         try:
-            self.logger.log(self.file_object, 'Start of Prediction')
+            self.logger.log(self.file_object, 'Start of Prediction', 'Info')
             #initializing PreProcessor object
             self.preprocessor = PreProcessing(self.file_object, self.logger)
             #initializing FileHandler object
@@ -29,9 +29,11 @@ class Prediction:
             #reading data file
             dataframe = pd.read_csv('Prediction_Files/'+file)
             self.data = dataframe.copy()
+            #recieving values as tuple
             columninfo = self.pred_data_val.getSchemaValues()
             #Getting required columns for prediction
-            self.data = self.pred_data_val.getRequiredColumns(columninfo[2])
+            #by subscribing to index 2 getting acces to column names
+            self.data = self.pred_data_val.getRequiredColumns(columninfo[2].keys())
 
             hasNull = self.preprocessor.isNullPresent(self.data)
             if hasNull:
@@ -49,10 +51,12 @@ class Prediction:
             predicted = logisticReg.predict(self.data)
             dataframe['predicted'] = ['Edible' if i == 0 else 'Poisonous' for i in predicted]
             dataframe.to_csv('Prediction_Files/Prediction.csv')
-            self.logger.log(self.file_object, 'Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class ')
-            columninfo[2].append('prediction')
-            return dataframe.to_numpy(), columninfo[2]
+            self.logger.log(self.file_object, 'Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class ', 'Info')
+            #converting dict array to list
+            columninfo = list(columninfo[2].keys())
+            columninfo.append('prediction')
+            return dataframe.to_numpy(), columninfo
 
         except Exception as e:
-            self.logger.log(self.file_object, 'Error occured while running the prediction!! Message: '+ str(e))
+            self.logger.log(self.file_object, 'Error occured while running the prediction!! Message: '+ str(e),'Error')
             raise e
