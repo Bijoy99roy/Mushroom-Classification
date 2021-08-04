@@ -1,6 +1,5 @@
+#performing important imports
 import pandas as pd
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
-from sklearn.impute import SimpleImputer
 from file_operation.file_handler import FileHandler
 class PreProcessing:
     def __init__(self, file_object, logger_object):

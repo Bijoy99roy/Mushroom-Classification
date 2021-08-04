@@ -42,8 +42,6 @@ def home():
         return render_template('exception.html', exception=message)
 
 def allowed_file(filename):
-    print('.' in filename and filename.split('.')[1].lower() in ALLOWED_EXTENSIONS)
-    print(filename.split('.')[1].lower())
     return '.' in filename and filename.split('.')[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/uploader', methods=['GET','POST'])
