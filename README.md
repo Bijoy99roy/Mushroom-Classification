@@ -24,6 +24,7 @@ You can get the Documentation for this project here
 - Numpy
 - Pandas
 - Flask
+- Scikit-learn v0.24.1
 
 ## 🛠 Requirements to perform EDA
 
@@ -51,6 +52,6 @@ Install all the requirements by running requirements.txt
     
 ## Authors
 
-- [@BijoyKumarRoy](https://github.com/Bijoy99roy)
+- [@BijoyKumarRoy](https://www.linkedin.com/in/bijoy-kumar-roy-4b0975189/)
 
   
