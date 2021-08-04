@@ -1,3 +1,4 @@
+#performing important imports
 from flask import Flask, request, render_template, send_file, redirect, url_for
 from predictionValidation import PredictionValidation
 from prediction_data_validation.prediction_data_validation import PredictionDataValidation
@@ -5,12 +6,15 @@ from model_prediction.Prediction import Prediction
 import os
 from application_logging.logger import App_Logger
 import pandas as pd
+from flask_cors import cross_origin
 
 from werkzeug.utils import secure_filename
 app = Flask(__name__)
 logger = App_Logger()
+ALLOWED_EXTENSIONS = {'csv'}
 
 @app.route("/", methods=["GET"])
+@cross_origin()
 def home():
     """
     This function initiates the home page
@@ -21,7 +25,9 @@ def home():
     is_uploaded = False
     try:
         pred_data_val = PredictionDataValidation()
+        #deleting Prediction_Files folder
         pred_data_val.deletePredictionFiles()
+        # creating Prediction_Files folder
         pred_data_val.createPredictionFiles('Prediction_Files')
         #pred_data_val.createPredictionFiles('Prediction_Log')
         column_info = pred_data_val.getSchemaValues()
@@ -35,7 +41,13 @@ def home():
         message = 'Error :: ' + str(e)
         return render_template('exception.html', exception=message)
 
+def allowed_file(filename):
+    print('.' in filename and filename.split('.')[1].lower() in ALLOWED_EXTENSIONS)
+    print(filename.split('.')[1].lower())
+    return '.' in filename and filename.split('.')[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route('/uploader', methods=['GET','POST'])
+@cross_origin()
 def uploadFiles():
     """
     This function helps to upload the file for prediction
@@ -44,15 +56,21 @@ def uploadFiles():
     file_object = open("Prediction_Log/apiHandlerLog.txt", 'a+')
     logger.log(file_object, 'File upload initaited..', 'Info')
     try:
-        if os.path.exists('Prediction_Files/Prediction.csv'):
+        if os.path.exists('Prediction_Files/Prediction.csv') or len(os.listdir('Prediction_Files/')):
             return redirect(url_for('home'))
+
         is_uploaded = False
+        #getting uploaded file
         if request.method == 'POST':
             if request.files['file'] is not None:
                 file = request.files['file']
-                file.save(os.path.join('Prediction_Files/',secure_filename(file.filename)))
-                is_uploaded = True
-                logger.log(file_object, 'File upload complete..', 'Info')
+                #checking if correct file
+                if allowed_file(file.filename):
+                    file.save(os.path.join('Prediction_Files/',secure_filename(file.filename)))
+                    is_uploaded = True
+                    logger.log(file_object, 'File upload complete..', 'Info')
+                else:
+                   return redirect(url_for('home'))
 
 
         file_object.close()
@@ -64,6 +82,7 @@ def uploadFiles():
         return render_template('exception.html', exception=message)
 
 @app.route('/input', methods=['POST'])
+@cross_origin()
 def manualInput():
     """
     This function helps to get all the manual input provided by the user
@@ -73,6 +92,7 @@ def manualInput():
     logger.log(file_object, 'Getting input from Form', 'Info')
     try:
         is_uploaded = True
+        #getting data
         if request.method == 'POST':
             input = []
             pred_data_val = PredictionDataValidation()
@@ -89,6 +109,7 @@ def manualInput():
         message = 'Error :: ' + str(e)
         return render_template('exception.html', exception=message)
 @app.route('/predict', methods=['GET'])
+@cross_origin()
 def predict():
     """
     This function is the gateway for data prediction
@@ -100,9 +121,11 @@ def predict():
         file_object = open("Prediction_Log/apiHandlerLog.txt", 'a+')
         logger.log(file_object, 'Prediction Initiated..', 'Info')
         pred_val = PredictionValidation()
+        #initiating validstion
         pred_val.validation()
 
         pred = Prediction()
+        #calling perdict to perform prediction
         prediction, columns = pred.predict()
         logger.log(file_object, 'Prediction for data complete', 'Info')
         file_object.close()
@@ -115,6 +138,7 @@ def predict():
         return render_template('exception.html', exception = message)
 
 @app.route('/download',methods=['GET'])
+@cross_origin()
 def download():
     """
     This function helps to download the predicted output
