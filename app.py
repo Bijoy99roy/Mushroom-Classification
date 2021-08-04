@@ -26,7 +26,8 @@ def home():
     try:
         pred_data_val = PredictionDataValidation()
         #deleting Prediction_Files folder
-        pred_data_val.deletePredictionFiles()
+        if os.path.isdir('Prediction_Files/'):
+            pred_data_val.deletePredictionFiles()
         # creating Prediction_Files folder
         pred_data_val.createPredictionFiles('Prediction_Files')
         #pred_data_val.createPredictionFiles('Prediction_Log')
