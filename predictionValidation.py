@@ -9,14 +9,13 @@ class PredictionValidation:
 
     def validation(self):
         try:
-            f = open("Prediction_Log/Prediction_Log.txt", "a+")
-
+            f = open("prediction_log/Prediction_Log.txt", "a+")
             self.logger.log(f,"Validation started for Prediction Data")
             #Getting all the necessary information from Schema file
-            columnNumber, columnNames, requiredColumns = self.raw_data.getSchemaValues()
+            column_number, column_names, required_columns = self.raw_data.get_schema_values()
             #validating columns length
             self.logger.log(f, "Starting columns length validation")
-            self.raw_data.validateColumnLength(columnNumber)
+            self.raw_data.validate_column_length(column_number)
             self.logger.log(f, "Columns length validation complete!!")
             f.close()
 

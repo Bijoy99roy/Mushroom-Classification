@@ -7,7 +7,7 @@ class FileHandler:
         self.logger = logger_object
         self.model_path = 'models/'
 
-    def loadModel(self, filename):
+    def load_model(self, filename):
         """
         This function helps to load different .sav files
         :param filename:

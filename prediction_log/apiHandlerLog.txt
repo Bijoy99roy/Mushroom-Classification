@@ -1,0 +1,13 @@
+2021-08-16/18:36:27: Info :		Initiating app
+2021-08-16/18:36:27: Info :		Deletion and creation of prediction_files complete. Exiting method...
+2021-08-16/18:36:30: Info :		Getting input from Form
+2021-08-16/18:36:33: Info :		Prediction Initiated..
+2021-08-16/18:36:56: Info :		Prediction for data complete
+2021-08-16/18:37:07: Info :		Initiating app
+2021-08-16/18:37:07: Info :		Deletion and creation of prediction_files complete. Exiting method...
+2021-08-16/18:37:15: Info :		File upload initaited..
+2021-08-16/18:37:15: Info :		File upload complete..
+2021-08-16/18:37:16: Info :		Prediction Initiated..
+2021-08-16/18:37:19: Info :		Prediction for data complete
+2021-08-16/18:37:23: Info :		Initiating app
+2021-08-16/18:37:23: Info :		Deletion and creation of prediction_files complete. Exiting method...

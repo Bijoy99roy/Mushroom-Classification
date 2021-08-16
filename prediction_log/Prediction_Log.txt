@@ -1,0 +1,31 @@
+2021-08-16/18:36:33: None :		Validation started for Prediction Data
+2021-08-16/18:36:33: None :		Starting columns length validation
+2021-08-16/18:36:33: None :		Columns length validation complete!!
+2021-08-16/18:36:33: Info :		Start of Prediction
+2021-08-16/18:36:33: Info :		Entered the isNullPresent method of PreProcessor class
+2021-08-16/18:36:33: Info :		No missing value found. Exiting isNummPresent method of PreProcessor class
+2021-08-16/18:36:33: Info :		Entered the encodeData method of PreProcessor class
+2021-08-16/18:36:33: Info :		Entered the loadModel method of FileHandler class
+2021-08-16/18:36:33: Info :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-16/18:36:53: Info :		Encoding complete!!. Exiting encoding method...
+2021-08-16/18:36:53: Info :		Entered the loadModel method of FileHandler class
+2021-08-16/18:36:53: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-16/18:36:56: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-16/18:37:16: None :		Validation started for Prediction Data
+2021-08-16/18:37:16: None :		Starting columns length validation
+2021-08-16/18:37:16: None :		Columns length validation complete!!
+2021-08-16/18:37:16: Info :		Start of Prediction
+2021-08-16/18:37:17: Info :		Entered the isNullPresent method of PreProcessor class
+2021-08-16/18:37:17: Info :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-16/18:37:17: Info :		Entered imputeMissingValues method of PreProcessing class
+2021-08-16/18:37:17: Info :		Entered the loadModel method of FileHandler class
+2021-08-16/18:37:17: Info :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-16/18:37:19: Info :		Started imputing data.
+2021-08-16/18:37:19: Info :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-16/18:37:19: Info :		Entered the encodeData method of PreProcessor class
+2021-08-16/18:37:19: Info :		Entered the loadModel method of FileHandler class
+2021-08-16/18:37:19: Info :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-16/18:37:19: Info :		Encoding complete!!. Exiting encoding method...
+2021-08-16/18:37:19: Info :		Entered the loadModel method of FileHandler class
+2021-08-16/18:37:19: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-16/18:37:19: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
