@@ -1,13 +1,14 @@
-#performing important imports
-from application_logging.logger import App_Logger
+# performing important imports
 import json
 import os
 import shutil
 import pandas as pd
+from application_logging.logger import AppLogger
+
 
 class PredictionDataValidation:
     def __init__(self):
-        self.logger = App_Logger()
+        self.logger = AppLogger()
         self.schema = 'Prediction_Schema.json'
 
     def delete_prediction_files(self):
@@ -22,32 +23,40 @@ class PredictionDataValidation:
             self.logger.log(file, 'prediction_files deleted.', 'Info')
             file.close()
         except Exception as e:
-            self.logger.log(file, 'Error occured in deleting folder in deletePredictionFiles method of PredictionDataValidation class. Message: '+str(e), 'Error')
+            self.logger.log(
+                file,
+                'Error occured in deleting folder in deletePredictionFiles method of \
+                PredictionDataValidation class. Message: ' +
+                str(e),
+                'Error')
             self.logger.log(file,
                             'Failed to delete folder.', 'Error')
             file.close()
             raise e
 
-    def create_prediction_files(self, folderName):
+    def create_prediction_files(self, folder_name):
         """
         Creates new directory
-        :param folderName:
-
+        :param folder_name:
         """
         file = open("prediction_log/folderHandling.txt", 'a+')
         try:
-            self.logger.log(file, 'Entered createPredictionFiles method of PredictionDataValidation class','Info')
-            os.mkdir(f'{folderName}/')
+            self.logger.log(file, 'Entered createPredictionFiles method of PredictionDataValidation class', 'Info')
+            os.mkdir(f'{folder_name}/')
             self.logger.log(file, 'prediction_files created.')
             file.close()
         except Exception as e:
-            self.logger.log(file,
-                            'Error occured in creating folder in createPredictionFiles method of PredictionDataValidation class. Message: ' + str(
-                                e), 'Error')
+            self.logger.log(
+                file,
+                'Error occured in creating folder in createPredictionFiles method of \
+                PredictionDataValidation class. Message: ' +
+                str(e),
+                'Error')
             self.logger.log(file,
                             'Failed to create folder.', 'Error')
             file.close()
             raise e
+
     def get_schema_values(self):
         """
         Retrives important data from Schema
@@ -63,7 +72,7 @@ class PredictionDataValidation:
             column_number = dic["ColumnNumber"]
             required_columns = dic["ColumnNames"]
             message = "ColumnNumber: "+str(column_number)+"\t"+"RequiredColumns: "+str(required_columns)+"\n"
-            self.logger.log(file,message, 'Info')
+            self.logger.log(file, message, 'Info')
             file.close()
 
         except ValueError as v:
@@ -81,8 +90,8 @@ class PredictionDataValidation:
         except Exception as e:
             self.logger.log(file, str(e), 'Error')
             file.close()
-            raise  e
-        #returning tuple of these 3 values
+            raise e
+        # returning tuple of these 3 values
         return column_number, column_names, required_columns
 
     def validate_column_length(self, column_number):
@@ -90,8 +99,8 @@ class PredictionDataValidation:
         This function validates the number of columns in the provided data
         :param column_number:
         """
+        f = open("prediction_log/columnValidationLog.txt", 'a+')
         try:
-            f = open("prediction_log/columnValidationLog.txt", 'a+')
             self.logger.log(f, "Column Length Validation Started!!", 'Info')
             for file in os.listdir('prediction_files/'):
                 csv = pd.read_csv('prediction_files/'+file)
@@ -99,7 +108,9 @@ class PredictionDataValidation:
                     pass
                 else:
                     self.logger.log(f, "Invalid column length for the file!! Exiting...", 'Error')
-                    raise Exception(f"Invalid column length for the file!!. Column should be {column_number}, {csv.shape[1]} found")
+                    raise Exception(
+                        f"Invalid column length for the file!!. Column should be {column_number}, "
+                        f"{csv.shape[1]} found")
             self.logger.log(f, "Columns length validation complete!!")
         except Exception as e:
             self.logger.log(f, str(e), 'Error')
@@ -113,22 +124,20 @@ class PredictionDataValidation:
         :param required_columns:
         :return: columns:List
         """
+        f = open("prediction_log/RequiredColumnsLog.txt", 'a+')
         try:
             columns = None
-            f = open("prediction_log/RequiredColumnsLog.txt", 'a+')
             self.logger.log(f, "Getting required columns...", 'Info')
             for file in os.listdir('prediction_files/'):
                 csv = pd.read_csv('prediction_files/'+file)
                 columns = csv[required_columns].copy()
-                self.logger.log(f,'Columns aquired from '+file, 'Info')
+                self.logger.log(f, 'Columns aquired from '+file, 'Info')
         except Exception as e:
-            self.logger.log(f, 'Exception occured in getRequiredColumns method in PredictionDataValidation class. Message: '+str(e), 'Error')
+            self.logger.log(
+                f,
+                'Exception occured in getRequiredColumns method in PredictionDataValidation class. Message: '+str(e),
+                'Error')
             f.close()
             raise e
         f.close()
         return columns
-
-
-
-
-

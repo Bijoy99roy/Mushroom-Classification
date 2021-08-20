@@ -2,3 +2,9 @@
 2021-08-16/18:36:33: None :		Columns length validation complete!!
 2021-08-16/18:37:16: Info :		Column Length Validation Started!!
 2021-08-16/18:37:16: None :		Columns length validation complete!!
+2021-08-18/16:57:37: Info :		Column Length Validation Started!!
+2021-08-18/16:57:37: None :		Columns length validation complete!!
+2021-08-18/16:58:20: Info :		Column Length Validation Started!!
+2021-08-18/16:58:20: None :		Columns length validation complete!!
+2021-08-18/19:32:30: Info :		Column Length Validation Started!!
+2021-08-18/19:32:30: None :		Columns length validation complete!!

@@ -29,3 +29,47 @@
 2021-08-16/18:37:19: Info :		Entered the loadModel method of FileHandler class
 2021-08-16/18:37:19: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
 2021-08-16/18:37:19: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output. Exiting Predict method of Prediction class 
+2021-08-18/16:57:36: None :		Validation started for Prediction Data
+2021-08-18/16:57:36: None :		Starting columns length validation
+2021-08-18/16:57:37: None :		Columns length validation complete!!
+2021-08-18/16:57:37: Info :		Start of Prediction
+2021-08-18/16:57:37: Info :		Entered the isNullPresent method of PreProcessor class
+2021-08-18/16:57:37: Info :		No missing value found. Exiting isNummPresent method of PreProcessor class
+2021-08-18/16:57:37: Info :		Entered the encodeData method of PreProcessor class
+2021-08-18/16:57:37: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/16:57:37: Info :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-18/16:57:52: Info :		Encoding complete!!. Exiting encoding method...
+2021-08-18/16:57:52: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/16:57:52: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-18/16:57:55: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output.                 Exiting Predict method of Prediction class 
+2021-08-18/16:58:20: None :		Validation started for Prediction Data
+2021-08-18/16:58:20: None :		Starting columns length validation
+2021-08-18/16:58:20: None :		Columns length validation complete!!
+2021-08-18/16:58:20: Info :		Start of Prediction
+2021-08-18/16:58:20: Info :		Entered the isNullPresent method of PreProcessor class
+2021-08-18/16:58:20: Info :		Found missing values. Exiting isNummPresent method of PreProcessor class
+2021-08-18/16:58:20: Info :		Entered imputeMissingValues method of PreProcessing class
+2021-08-18/16:58:20: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/16:58:20: Info :		simpleImputer loaded. Exiting loadModel method of FileHandler class
+2021-08-18/16:58:22: Info :		Started imputing data.
+2021-08-18/16:58:22: Info :		Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class
+2021-08-18/16:58:22: Info :		Entered the encodeData method of PreProcessor class
+2021-08-18/16:58:22: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/16:58:22: Info :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-18/16:58:22: Info :		Encoding complete!!. Exiting encoding method...
+2021-08-18/16:58:22: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/16:58:22: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-18/16:58:22: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output.                 Exiting Predict method of Prediction class 
+2021-08-18/19:32:30: None :		Validation started for Prediction Data
+2021-08-18/19:32:30: None :		Starting columns length validation
+2021-08-18/19:32:31: None :		Columns length validation complete!!
+2021-08-18/19:32:31: Info :		Start of Prediction
+2021-08-18/19:32:31: Info :		Entered the isNullPresent method of PreProcessor class
+2021-08-18/19:32:31: Info :		No missing value found. Exiting isNummPresent method of PreProcessor class
+2021-08-18/19:32:31: Info :		Entered the encodeData method of PreProcessor class
+2021-08-18/19:32:31: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/19:32:31: Info :		oneHotEncoder loaded. Exiting loadModel method of FileHandler class
+2021-08-18/19:32:45: Info :		Encoding complete!!. Exiting encoding method...
+2021-08-18/19:32:45: Info :		Entered the loadModel method of FileHandler class
+2021-08-18/19:32:45: Info :		logisticRegressor loaded. Exiting loadModel method of FileHandler class
+2021-08-18/19:32:48: Info :		Predction complete!!. Prediction.csv saved in Prediction_File as output.                 Exiting Predict method of Prediction class 

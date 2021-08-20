@@ -1,31 +1,42 @@
-#performing important imports
+# performing important imports
 import pandas as pd
 from file_operation.file_handler import FileHandler
+
 
 class PreProcessing:
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
         self.logger = logger_object
-    def encode_data(self, predictorData):
+
+    def encode_data(self, predictor_data):
         """
         This function encodes the data
-        :param data:
+        :param predictor_data:
         :return: data
         """
         self.logger.log(self.file_object, 'Entered the encodeData method of PreProcessor class', 'Info')
         try:
-            self.one_hot_encoder = FileHandler(self.file_object, self.logger).load_model('oneHotEncoder')
-            self.predictor_data = self.one_hot_encoder.transform(predictorData)
+            one_hot_encoder = FileHandler(self.file_object, self.logger).load_model('oneHotEncoder')
+            predictor_data = one_hot_encoder.transform(predictor_data)
             self.logger.log(self.file_object, 'Encoding complete!!. Exiting encoding method...', 'Info')
-            return self.predictor_data
+            return predictor_data
 
         except ValueError as v:
-            self.logger.log(self.file_object, 'Value Error occured in encodeData method of PreProcessing class. Message: ' + str(ValueError))
-            self.logger.log(self.file_object, 'encoding values failed. Exited the encodeData method of the Preprocessor class')
+            self.logger.log(
+                self.file_object,
+                'Value Error occured in encodeData method of PreProcessing class. Message: ' + str(ValueError),
+                'Error')
+            self.logger.log(
+                self.file_object,
+                'encoding values failed. Exited the encodeData method of the Preprocessor class',
+                'Error')
             raise v
 
         except Exception as e:
-            self.logger.log(self.file_object, 'Exception occured in encodeData method of PreProcessing class. Message: '+str(e), 'Error')
+            self.logger.log(
+                self.file_object,
+                'Exception occured in encodeData method of PreProcessing class. Message: '+str(e),
+                'Error')
             self.logger.log(self.file_object, 'Failed to Encode data. Exiting....', 'Error')
             raise e
 
@@ -36,26 +47,33 @@ class PreProcessing:
         :return: has_null
         """
         self.logger.log(self.file_object, 'Entered the isNullPresent method of PreProcessor class', 'Info')
-        self.has_null = False
-        self.cols_with_missing_values = []
-        self.cols = data.columns
-        self.missing_value_count = []
+        has_null = False
+        cols = data.columns
 
         try:
-            self.cols_with_missing_values = [i for i in self.cols if data[i].isnull().sum()>=1]
-            self.missing_value_count = [data[i].isnull().sum() for i in self.cols_with_missing_values]
-            if len(self.cols_with_missing_values) > 0:
-                self.has_null = True
-                self.logger.log(self.file_object, 'Found missing values. Exiting isNummPresent method of PreProcessor class', 'Info')
+            cols_with_missing_values = [i for i in cols if data[i].isnull().sum() >= 1]
+            if len(cols_with_missing_values) > 0:
+                has_null = True
+                self.logger.log(
+                    self.file_object,
+                    'Found missing values. Exiting isNummPresent method of PreProcessor class',
+                    'Info')
             else:
-                self.logger.log(self.file_object, 'No missing value found. Exiting isNummPresent method of PreProcessor class', 'Info')
-            return self.has_null
+                self.logger.log(
+                    self.file_object,
+                    'No missing value found. Exiting isNummPresent method of PreProcessor class',
+                    'Info')
+            return has_null
 
         except Exception as e:
-            self.logger.log(self.file_object,
-                                   'Exception occured in isNullPresent method of the PreProcessor class. Exception message:  ' + str(e), 'Error')
-            self.logger.log(self.file_object,
-                                   'Finding missing values failed. Exited the isNullPresent method of the PreProcessor class', 'Error')
+            self.logger.log(
+                self.file_object,
+                'Exception occured in isNullPresent method of the PreProcessor class. Exception message:  ' + str(e),
+                'Error')
+            self.logger.log(
+                self.file_object,
+                'Finding missing values failed. Exited the isNullPresent method of the PreProcessor class',
+                'Error')
             raise e
 
     def impute_missing_values(self, data):
@@ -65,33 +83,37 @@ class PreProcessing:
         :return: data
         """
         self.logger.log(self.file_object, 'Entered imputeMissingValues method of PreProcessing class', 'Info')
-        self.data = data
+        input_data = data
 
         try:
-            self.imputer = FileHandler(self.file_object, self.logger).load_model('simpleImputer')
+            imputer = FileHandler(self.file_object, self.logger).load_model('simpleImputer')
             self.logger.log(self.file_object, 'Started imputing data.', 'Info')
-            self.data = pd.DataFrame(self.imputer.transform(self.data), columns=self.data.columns)
-            self.logger.log(self.file_object, 'Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class', 'Info')
-            return self.data
+            input_data = pd.DataFrame(imputer.transform(input_data), columns=input_data.columns)
+            self.logger.log(
+                self.file_object,
+                'Imputing data complete!!. Exiting imputeMissingValues method of PreProcessing class',
+                'Info')
+            return input_data
 
         except ValueError as v:
-            self.logger.log(self.file_object, 'Value Error occured in imputeMissingValues method of PreProcessing class. Message: '+ str(ValueError), 'Error')
-            self.logger.log(self.file_object, 'Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class', 'Error')
+            self.logger.log(
+                self.file_object,
+                'Value Error occured in imputeMissingValues method of PreProcessing class. Message: ' + str(ValueError),
+                'Error')
+            self.logger.log(
+                self.file_object,
+                'Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class',
+                'Error')
             raise v
 
         except Exception as e:
-            self.logger.log(self.file_object, 'Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  ' + str(e), 'Error')
-            self.logger.log(self.file_object, 'Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class', 'Error')
+            self.logger.log(
+                self.file_object,
+                'Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  ' +
+                str(e),
+                'Error')
+            self.logger.log(
+                self.file_object,
+                'Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class',
+                'Error')
             raise e
-
-
-
-
-
-
-
-
-
-
-
-
