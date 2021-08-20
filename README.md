@@ -12,6 +12,16 @@ The dataset used here is Mushroom Classification dataset from kaggele
   https://www.kaggle.com/uciml/mushroom-classification
 ```
   
+## 🚀Deployed Link
+
+### [Lanuch App](https://mushroom-e.herokuapp.com/)
+
+  
+## Screenshots
+
+![App Screenshot](/screenshots/homepage.png)
+
+  
 ## 📖Documentation
 You can get the Documentation for this project here
 
@@ -24,7 +34,6 @@ You can get the Documentation for this project here
 - Numpy
 - Pandas
 - Flask
-- Scikit-learn v0.24.1
 
 ## 🛠 Requirements to perform EDA
 
@@ -52,6 +61,6 @@ Install all the requirements by running requirements.txt
     
 ## Authors
 
-- [@BijoyKumarRoy](https://www.linkedin.com/in/bijoy-kumar-roy-4b0975189/)
+- [@BijoyKumarRoy](https://github.com/Bijoy99roy)
 
   
