@@ -61,6 +61,6 @@ Install all the requirements by running requirements.txt
     
 ## Authors
 
-- [@BijoyKumarRoy](https://github.com/Bijoy99roy)
+- [@BijoyKumarRoy](https://www.linkedin.com/in/bijoy-kumar-roy-4b0975189/)
 
   
