@@ -25,8 +25,6 @@ The dataset used here is Mushroom Classification dataset from kaggele
 ## 📖Documentation
 You can get the Documentation for this project here
 
-### [Documentation](https://drive.google.com/drive/folders/1HIGJ57NxvFujYyZBKwMVQPrMMFbOfC5r?usp=sharing)
-
   
 ## 🛠 Requirements to run project
 
